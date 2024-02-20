@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: backend-deployment
+  name: backend-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend-deployment
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: backend-deployment
+    spec:
+      containers:
+      - image: 968225077300.dkr.ecr.us-east-1.amazonaws.com/youtube-live/production/backend
+        name: backend
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}

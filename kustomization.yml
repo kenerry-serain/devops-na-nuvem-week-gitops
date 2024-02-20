@@ -1,0 +1,14 @@
+resources:
+- frontend/deployment.yml
+- frontend/service.yml
+- backend/deployment.yml
+- backend/service.yml
+
+images:
+- name: 968225077300.dkr.ecr.us-east-1.amazonaws.com/youtube-live/production/frontend
+  newName: 968225077300.dkr.ecr.us-east-1.amazonaws.com/youtube-live/production/frontend
+  newTag: latest
+
+- name: 968225077300.dkr.ecr.us-east-1.amazonaws.com/youtube-live/production/backend
+  newName: 968225077300.dkr.ecr.us-east-1.amazonaws.com/youtube-live/production/backend
+  newTag: latest

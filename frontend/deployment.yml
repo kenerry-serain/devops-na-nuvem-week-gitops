@@ -4,6 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     app: frontend-deployment
+    new-label: new-value
   name: frontend-deployment
 spec:
   replicas: 1

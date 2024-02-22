@@ -5,6 +5,8 @@ metadata:
   labels:
     app: frontend-deployment
   name: frontend-service
+  annotations:
+    alb.ingress.kubernetes.io/healthcheck-path: /
 spec:
   ports:
   - port: 32001

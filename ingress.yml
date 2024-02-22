@@ -1,0 +1,31 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: devops-na-nuvem-week-ingress
+  annotations:
+    alb.ingress.kubernetes.io/load-balancer-name: devops-na-nuvem-alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/subnets: subnet-08447451ff55ed8a5,subnet-051ef58e0e4821340
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:968225077300:certificate/300edfa2-3d5d-4852-94bd-a70a91fca99c
+    kubernetes.io/ingress.class: alb
+spec:
+  tls:
+  - hosts:
+      - devopsnanuvemweek.com
+  rules:
+  - http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: frontend-service
+            port:
+              number: 32001
+      - path: /backend
+        pathType: Prefix
+        backend:
+          service:
+            name: backend-service
+            port:
+              number: 32000

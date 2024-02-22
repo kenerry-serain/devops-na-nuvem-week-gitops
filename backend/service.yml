@@ -5,6 +5,8 @@ metadata:
   labels:
     app: backend-deployment
   name: backend-service
+  annotations:
+    alb.ingress.kubernetes.io/healthcheck-path: /backend/health
 spec:
   ports:
   - port: 32000

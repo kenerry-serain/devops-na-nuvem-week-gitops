@@ -4,12 +4,12 @@ resources:
 - backend/deployment.yml
 - backend/service.yml
 - ingress.yml
-
 images:
+- name: 968225077300.dkr.ecr.us-east-1.amazonaws.com/youtube-live/production/backend
+  newName: 968225077300.dkr.ecr.us-east-1.amazonaws.com/youtube-live/production/backend
+  newTag: 9e45182407695856e958919e2966a584748984db
 - name: 968225077300.dkr.ecr.us-east-1.amazonaws.com/youtube-live/production/frontend
   newName: 968225077300.dkr.ecr.us-east-1.amazonaws.com/youtube-live/production/frontend
   newTag: latest
-
-- name: 968225077300.dkr.ecr.us-east-1.amazonaws.com/youtube-live/production/backend
-  newName: 968225077300.dkr.ecr.us-east-1.amazonaws.com/youtube-live/production/backend
-  newTag: latest
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization

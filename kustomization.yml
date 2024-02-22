@@ -7,7 +7,7 @@ resources:
 images:
 - name: 968225077300.dkr.ecr.us-east-1.amazonaws.com/youtube-live/production/backend
   newName: 968225077300.dkr.ecr.us-east-1.amazonaws.com/youtube-live/production/backend
-  newTag: 9e45182407695856e958919e2966a584748984db
+  newTag: de7e3eb5cbeb05bf658be6732de6d10d7094f566
 - name: 968225077300.dkr.ecr.us-east-1.amazonaws.com/youtube-live/production/frontend
   newName: 968225077300.dkr.ecr.us-east-1.amazonaws.com/youtube-live/production/frontend
   newTag: latest

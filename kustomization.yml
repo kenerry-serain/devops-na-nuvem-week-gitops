@@ -10,6 +10,6 @@ images:
   newTag: 59e40892b9bf58443da2702e8043348f76b177a5
 - name: 968225077300.dkr.ecr.us-east-1.amazonaws.com/youtube-live/production/frontend
   newName: 968225077300.dkr.ecr.us-east-1.amazonaws.com/youtube-live/production/frontend
-  newTag: 94a3fe572c49ed3759053a3ba75ea26109e59fea
+  newTag: 59e40892b9bf58443da2702e8043348f76b177a5
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
